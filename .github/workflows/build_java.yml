@@ -1,0 +1,11 @@
+name: test-workflow
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    branches:
+      - main
+    steps:
+      - uses: actions/checkout@v2
+      - name: echo command
+        runs: echo 'It just works.' 
