@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: echo command
-      - runs: echo 'It just works.' 
+        run: echo 'It just works.' 
