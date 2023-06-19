@@ -8,7 +8,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - uses: sdkman/sdkman-action@v1
+      - name: SDKMan
+        uses: sdkman/sdkman-action@v1
         id: sdkman
         with:
           candidate: java
