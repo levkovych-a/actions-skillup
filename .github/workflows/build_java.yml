@@ -11,3 +11,4 @@ jobs:
         with:
           candidate: java
           version: 11.0.16-zulu
+      - run: java -version
