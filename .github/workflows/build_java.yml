@@ -7,16 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: SDKMan
-      - uses: sdkman/sdkman-action@master
+        uses: sdkman/sdkman-action@master
         id: sdkman
         with:
           candidate: java
           version: 11.0.16-zulu
-        run: java -version
+      - run: java -version
       - name: Gradle
-      - uses: sdkman/sdkman-action@main
+        uses: sdkman/sdkman-action@main
         id: sdkmangradle
         with:
           candidate: gradle
