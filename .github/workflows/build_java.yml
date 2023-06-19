@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: sdkman/sdkman-action@v1
+      - uses: sdkman/sdkman-action
         id: sdkman
         with:
           candidate: java
