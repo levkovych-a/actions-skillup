@@ -24,3 +24,5 @@ jobs:
       - run: gradle -version
       - name: SpotLess
         run: ./gradlew spotlessApply
+      - name: build java app
+        run: gradle init --type java-library
