@@ -15,3 +15,10 @@ jobs:
           candidate: java
           version: 11.0.16-zulu
       - run: java -version
+      - name: Gradle
+        uses: sdkman/sdkman-action@master
+        id: sdkman
+        with:
+          candidate: gradle
+          version: 7.4
+      - run: java -version
