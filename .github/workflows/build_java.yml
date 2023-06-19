@@ -22,3 +22,10 @@ jobs:
           candidate: gradle
           version: 7.4.2
       - run: gradle -version
+      - name: SpotLess
+        uses: diffpllug/spotless
+        id: spotless
+        with:
+          candidate: gradle
+          version: 7.4.2
+      - run: gradlew spotlessApply
