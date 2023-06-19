@@ -26,6 +26,5 @@ jobs:
         uses: diffpllug/spotless
         id: spotless
         with:
-          candidate: gradle
-          version: 7.4.2
+          candidate: gradlew
       - run: gradlew spotlessApply
