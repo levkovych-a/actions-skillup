@@ -21,4 +21,4 @@ jobs:
         with:
           candidate: gradle
           version: 7.4
-      - run: Gradle -version
+      - run: gradle -version
