@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: SDKMan
+        uses: sdkman/sdkman-action@master
+        id: sdkman
+        with:
+          candidate: java
+          version: 11.0.16-zulu
+      - run: java -version
+      - name: Gradle
+        uses: sdkman/sdkman-action@main
+        id: sdkmangradle
+        with:
+          candidate: gradle
+          version: 7.4.2
+      - run: gradle -version
+      - name: SpotLess
+        run: ./gradlew spotlessApply
+      - name: build java app
+        run: gradle init --type java-library
