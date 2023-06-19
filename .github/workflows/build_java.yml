@@ -6,11 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: sdkman/sdkman-actions@v1
+      - uses: sdkman/sdkman-action@v1
         id: sdkman
         with:
           candidate: java
           version: 11.0.16-zulu
-
-      - name: Run single command
-        run: echo 'It just works.'
