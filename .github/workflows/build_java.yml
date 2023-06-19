@@ -22,3 +22,5 @@ jobs:
           candidate: gradle
           version: 7.4.2
       - run: gradle -version
+      - name: SpotLess
+        run: ./gradlew spotlessApply
