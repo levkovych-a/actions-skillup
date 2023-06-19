@@ -16,7 +16,7 @@ jobs:
           version: 11.0.16-zulu
       - run: java -version
       - name: Gradle
-        uses: sdkman/sdkman-action@master
+        uses: sdkman/sdkman-action@main
         id: sdkmangradle
         with:
           candidate: gradle
