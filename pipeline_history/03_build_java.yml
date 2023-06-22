@@ -22,8 +22,3 @@ jobs:
         run: |
           gradle init --type java-library
           gradle clean build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: app.jar
-          path: $0
