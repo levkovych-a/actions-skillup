@@ -19,11 +19,13 @@ jobs:
       - name: SpotLess
         run: ./gradlew spotlessApply
       - name: build java app
-        run: |
-          gradle init --type java-library
-          gradle clean build
+        run: 
+          ./gradlew build --scan
+#          |
+#          gradle init --type java-library
+#          gradle clean build
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: app.jar
-          path: $0
+          path: /bild
