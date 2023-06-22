@@ -8,6 +8,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: grade
+        uses: gradle/grade@v7
+        with:
+          candidate: gradle
+          version: 7.4.2
       - name: SpotLess
         run: ./gradlew spotlessApply
       - name: build java app
