@@ -17,8 +17,8 @@ jobs:
         with:
           gradle-version: 7.4
           arguments: build
-      - name: SpotLess
-        run: ./gradlew spotlessApply
+#      - name: SpotLess
+#        run: ./gradlew spotlessApply
 #      - name: build java app
 #        run: 
 #          ./gradlew build --scan
