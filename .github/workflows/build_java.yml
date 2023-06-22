@@ -13,7 +13,7 @@ jobs:
       - name: build java app
         run: |
           gradle init --type java-library
-          gradle clean build
+          gradle build
       - uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
