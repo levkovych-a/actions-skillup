@@ -21,4 +21,4 @@ jobs:
       - name: build java app
         run: |
           gradle init --type java-library
-          gradle build
+          gradle clean build
