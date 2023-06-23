@@ -27,5 +27,5 @@ jobs:
 #          gradle clean build
       - uses: actions/upload-artifact@v3
         with:
-          name: Package
+          name: ${{ secrets.PackageName }}
           path: build/libs
