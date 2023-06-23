@@ -19,7 +19,7 @@ jobs:
         with:
           gradle-version: 7.4
           arguments: clean build
-#      - name: build java app
+#      - name: build java app 
 #        run: 
 #          ./gradlew build --scan
 #          |
