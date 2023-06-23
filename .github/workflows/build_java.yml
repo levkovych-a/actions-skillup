@@ -12,13 +12,13 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '11.0.16'
+      - name: SpotLess
+        run: ./gradlew spotlessApply
       - name: grade
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: 7.4
           arguments: build
-#      - name: SpotLess
-#        run: ./gradlew spotlessApply
 #      - name: build java app
 #        run: 
 #          ./gradlew build --scan
